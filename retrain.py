@@ -2,7 +2,7 @@ import gpt_2_simple as gpt2
 import os
 import requests
 
-model_names = ["774M"]
+model_names = ["774M"] # options: 124M, 355M, 774M, 1558M
 for model_name in model_names:
 	if not os.path.isdir(os.path.join("models", model_name)):
 		print("Downloading model " + model_name)
